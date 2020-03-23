@@ -1,0 +1,69 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-grid {
+    margin: 20px;
+    display: grid;
+    height: 800px;
+    /* grid-template-columns: repeat(8, 5rem); */
+    grid-template-columns: repeat(4, 13rem);
+    grid-template-rows: repeat(2, 23rem);
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    border: 20px;
+    
+}
+
+
+.travis,
+.bookbag,
+.hoodie,
+.chicago,
+.controller,
+.camera,
+.iPhone,
+.air-pod {
+    display: grid;
+    padding: 15px;
+    align-items: center;
+    /* border: 0.1px solid grey; */
+    justify-content: center;
+    align-content: center;
+
+}
+.buttonUse {
+    /* display: inline-block; */
+    margin: 5px;
+    /* justify-self: center; */
+}
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    /* font-size: 12px; */
+    background-color: lightgray;
+    /* width: 30px; */
+    /* margin: 30px; */
+    justify-content: center;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: lightskyblue;
+   
+}
+
+.img {
+    justify-self: center;
+}
+
+.product-name {
+    justify-self: center;
+}
+
+.info {
+    align-self: center;
+}
+

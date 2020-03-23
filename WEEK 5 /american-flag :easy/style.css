@@ -1,0 +1,26 @@
+body{ 
+	width: 100%;
+}
+
+table {
+	border: solid black;
+}
+td {
+	width: 50%;
+}
+
+tr {
+	width: 50%;
+}
+
+
+.red{
+  background-color: red;
+
+  height: 62.5px;
+} 
+.white{
+  background-color: white;
+  
+  height: 62.5px;
+}  
