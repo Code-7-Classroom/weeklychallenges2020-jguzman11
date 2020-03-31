@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav class="nav">
+                <!-- Mobile Nav -->
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                </ul>
+                <!-- nav-large-Screen -->
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+      
+      <div class="slideshow-container">
+        <img class="slideshow" src="script" name="slide" width="400" height="500" alt="A slideshow of our special snacks">
+      </div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+      <section class="hero img1">
+          <div class="container">
+              <div class="title title-dark">
+                  <h2 class="title-head">Most Popular</h2>
+              </div>
+              <div class="cta">
+                  <a href="product.html" class="cta-link cta-link-darker">See More</a>
+                  <a href="product.html" class="cta-link cta-link-darker">Buy</a>
+              </div>
+          </div>
+      </section>
+      <section class="hero img2">
+          <div class="container">
+              <div class="title title-dark">
+                  <h2 class="title-head">New Releases</h2>
+              </div>
+              <div class="cta">
+                  <a href="product.html" class="cta-link cta-link-darker">See More</a>
+                  <a href="product.html" class="cta-link cta-link-darker">Buy</a>
+              </div>
+          </div>
+      </section>
+      <div class="hero img3">
+      </div>
+      <footer id="main-footer">
+        <div class="social">
+          <span class="icon"><a href="https://twitter.com/"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></span>
+          <span class="icon"><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></span>
+          <span class="icon"><a href="https://www.instagram.com/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></span>
+        </div>
+        <p>QueenK!cks &copy; 2020, All Rights Reserved</p>
+      </footer>
+    <script>
+var i = 0;      // Start Point
+var images = [0,1,2]; // Images Array
+var time = 2000;  // Time Between Switch
+   
+// Image List
+images[0] = "/imgShoes/travis1s.jpeg";
+images[1] = "imgShoes/bord7s.jpeg";
+images[2] = "imgShoes/bredtoes.jpeg";
+
+
+// Change Image
+function changeImg(){
+  document.slide.src = images[i];
+
+  // Check If Index Is Under Max
+  if(i < images.length - 1){
+    // Add 1 to Index
+    i++; 
+  } else { 
+    // Reset Back To O
+    i = 0;
+  }
+
+  // Run function every 2 seconds
+  setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+    </script>
+  </body> 
+</html>
+
