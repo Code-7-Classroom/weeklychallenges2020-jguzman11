@@ -20,7 +20,7 @@ var input = parseInt(prompt('Change for?'))
 console.log(coinAmount([1,5,10,25], input));
 
 
-// Find highest value coin
+// Find highest value coinx
 
 //Until we check all coins 
     //Subtract highest value coin that fits from amount

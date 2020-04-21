@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    padding: 25px 25px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    background-color: #333;
+    border-radius: 50px;
+    outline: none;
+}
+.red-Color{
+    background-color: red;
+}
+.white-Color{
+    background-color: white;
+}
