@@ -47,7 +47,8 @@ header{
 
 
 
-.mySlides {display: none;
+.mySlides {
+  display: none;
 }
 
 .slideshow{
